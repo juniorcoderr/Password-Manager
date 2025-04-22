@@ -58,7 +58,8 @@ def save():
                 json.dump(data, data_file, indent=4)
         finally:
             website_entry.delete(0, END)
-            website_entry.delete(0, END)
+            password_entry.delete(0, END)
+            messagebox.showinfo(title="Success", message="Website saved")
 
 
 # ---------------------------- FIND PASSWORD SETUP ------------------------------- #
